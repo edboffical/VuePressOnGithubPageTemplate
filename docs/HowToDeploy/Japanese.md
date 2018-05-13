@@ -61,7 +61,8 @@ shではなくbashで実行する必要があります。
 :::
 
 ## 5. リポジトリの設定を変更してGitHub Pagesを有効にする
-github.com上の先程pushした自分のリポジトリに移動して、リポジトリのsettingsページを開いてください。　　
+github.com上の先程pushした自分のリポジトリに移動して、  
+リポジトリのsettingsページを開いてください。  
 **GitHub Pages section**まで移動して、セレクトボックスから `gh-branch` を選んで Save ボタンを押しましょう。
 
 これで {yourname}.github.io/{repository}/ へのサイトの構築ができました！
