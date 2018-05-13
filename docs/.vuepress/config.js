@@ -41,7 +41,7 @@ const sidebarArray = ["/"].concat(dirs.map((dir) => {
 
 // configure these modules if you
 module.exports = {
-    title: "VuePress Generated",
+    title: "Vue Press On Github Pages Template",
     //description : "use for meta description",
     base: "/" + process.env.REPOSITORY + "/",
     config: (md) => {
