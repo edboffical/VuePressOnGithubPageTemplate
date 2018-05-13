@@ -77,8 +77,9 @@ git push
 ```
 
 These command push to project at first.(I think it push as master branch)
-*gh-pages branch has another .git history in your repository.*
-
+::: tip
+`gh-pages` branch has another .git history in your repository.
+:::
 ### How to more configure VuePress
 
 [Official Document here](https://vuepress.vuejs.org/guide/basic-config.html)

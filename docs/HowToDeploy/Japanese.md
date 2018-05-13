@@ -46,7 +46,7 @@ vi .env
 GITHUB_USERNAME="exampleUser"
 REPOSITORY="SampleRepository
 ```
-`GITHUB_USERNAME` と `REPOSITORY` を先程作ったものに修正しましょう。
+`GITHUB_USERNAME` と `REPOSITORY` を自分のものに修正しましょう。
 
 
 ## 4. shellからデプロイ
@@ -61,8 +61,7 @@ shではなくbashで実行する必要があります。
 :::
 
 ## 5. リポジトリの設定を変更してGitHub Pagesを有効にする
-github.com上の先程pushした自分のリポジトリに移動して、  
-リポジトリのsettingsページを開いてください。  
+github.com上の先程pushした自分のリポジトリに移動して　、リポジトリのsettingsページを開いてください。  
 **GitHub Pages section**まで移動して、セレクトボックスから `gh-branch` を選んで Save ボタンを押しましょう。
 
 これで {yourname}.github.io/{repository}/ へのサイトの構築ができました！
@@ -78,7 +77,9 @@ git commit -m "VuePress Project" .
 git push
 ```
 
-*gh-pagesブランチはmasterブランチと別の.git履歴を持つことになります*
+::: tip
+`gh-pages`ブランチはmasterブランチと別の.git履歴を持つことになります
+:::
 
 ### VuePressの設定を修正したい
 
