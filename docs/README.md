@@ -8,6 +8,12 @@ Just you need these 5 steps!
  
  （日本語の説明はもうちょっと下にあります）
  
+### Requirements
+- git
+- write(push) permission to github from git command  
+I think you can check `ssh git@github.com`
+- yarn(not npm until VuePress need it) 
+ 
 ### 5 steps for publish
 1. create your repo on github
 1. git clone this template and yarn install
@@ -28,6 +34,13 @@ More detail. [How To Deploy](/HowToDeploy/English.md)
 ## (日本語の説明)
 VuePressをGithub Pagesで公開するための雛形です。
 たった5つのステップで[こんなサイト](https://fruitriin.github.io/vptest/)を公開することができますよ！
+
+### 必要なもの
+- git
+- shell上からgitコマンドでgithubに書き込み（push）できること  
+`ssh git@github.com` コマンドで確認することができると思います。
+- yarn(VuePressが必要とする間はnpmではいけません) 
+ 
 
 ### 公開のための5ステップ
 1. githubでリポジトリを作る
