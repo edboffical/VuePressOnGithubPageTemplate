@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VuePress On Github Pages Template | 公開の仕方（日本語）</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/VuePressOnGithubPageTemplate/assets/css/3.styles.88b1a897.css" as="style"><link rel="preload" href="/VuePressOnGithubPageTemplate/assets/js/app.14ddd958.js" as="script"><link rel="preload" href="/VuePressOnGithubPageTemplate/assets/js/1.740ae03c.js" as="script"><link rel="prefetch" href="/VuePressOnGithubPageTemplate/assets/js/0.e234d54f.js"><link rel="prefetch" href="/VuePressOnGithubPageTemplate/assets/js/2.b27f9e08.js">
+    <link rel="stylesheet" href="/VuePressOnGithubPageTemplate/assets/css/3.styles.88b1a897.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/VuePressOnGithubPageTemplate/" class="home-link router-link-active"><!----><span class="site-name">
+      VuePress On Github Pages Template
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><!----></div></header><div class="sidebar-mask"></div><div class="sidebar"><!----><ul class="sidebar-links"><li><a href="/VuePressOnGithubPageTemplate/" class="sidebar-link">VuePress Template for Github Pages</a></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>HowToDeploy</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/VuePressOnGithubPageTemplate/HowToDeploy/English.html" class="sidebar-link">how to deploy in English</a></li><li><a href="/VuePressOnGithubPageTemplate/HowToDeploy/Japanese.html" class="active sidebar-link">公開の仕方（日本語）</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/VuePressOnGithubPageTemplate/HowToDeploy/Japanese.html#step1-githubでリポジトリを作る" class="sidebar-link">step1. githubでリポジトリを作る</a></li><li class="sidebar-sub-header"><a href="/VuePressOnGithubPageTemplate/HowToDeploy/Japanese.html#step2-雛形をコピーしてyarn-installする" class="sidebar-link">step2. 雛形をコピーして`yarn install`する</a></li><li class="sidebar-sub-header"><a href="/VuePressOnGithubPageTemplate/HowToDeploy/Japanese.html#step3-envファイルの修正" class="sidebar-link">step3. .envファイルの修正</a></li><li class="sidebar-sub-header"><a href="/VuePressOnGithubPageTemplate/HowToDeploy/Japanese.html#_4-shellからデプロイ" class="sidebar-link">4. shellからデプロイ</a></li><li class="sidebar-sub-header"><a href="/VuePressOnGithubPageTemplate/HowToDeploy/Japanese.html#_5-リポジトリの設定を変更してgithub-pagesを有効にする" class="sidebar-link">5. リポジトリの設定を変更してGitHub Pagesを有効にする</a></li><li class="sidebar-sub-header"><a href="/VuePressOnGithubPageTemplate/HowToDeploy/Japanese.html#付録" class="sidebar-link">付録.</a></li></ul></li></ul></div></li></ul></div><div class="page"><div class="content"><h1 id="公開の仕方（日本語）"><a href="#公開の仕方（日本語）" aria-hidden="true" class="header-anchor">#</a> 公開の仕方（日本語）</h1><p><strong>公開に必要な5つのステップ</strong></p><ol><li>githubでリポジトリを作る</li><li>雛形をコピーして<code>yarn install</code>する</li><li>.env ファイルを修正する</li><li>deploy.sh を実行する</li><li>公開するリポジトリでGithub Pagesを有効にする</li></ol><h2 id="step1-githubでリポジトリを作る"><a href="#step1-githubでリポジトリを作る" aria-hidden="true" class="header-anchor">#</a> step1. githubでリポジトリを作る</h2><p>github.comでリポジトリを作ってください。</p><h2 id="step2-雛形をコピーしてyarn-installする"><a href="#step2-雛形をコピーしてyarn-installする" aria-hidden="true" class="header-anchor">#</a> step2. 雛形をコピーして<code>yarn install</code>する</h2><p>下記のコマンドをコピーして、プロジェクトのディレクトリ名を修正したのち、
+これからプロジェクトを作るディレクトリでそれを実行してください。</p><pre class="language-text"><code>git clone --depth=1 --branch=master git@github.com:fruitriin/VuePressOnGithubPageTemplate.git {your_project_dirname}
+cd !$
+rm -rf .git 
+git init 
+yarn install
+</code></pre><p>やっていること:</p><ul><li>新しいプロジェクトのディレクトリに雛形をコピー</li><li>そこへ cd</li><li>テンプレートの .git 履歴を削除</li><li>git initしなおす</li><li>VuePress他をインストール</li></ul><div class="warning custom-block"><p class="custom-block-title">メモ</p><p>VuePressがyarnでのインストールが必須な間はyarnを使ってください。<br>
+(webpack4に対応してないと依存解決ができない)</p></div><h2 id="step3-envファイルの修正"><a href="#step3-envファイルの修正" aria-hidden="true" class="header-anchor">#</a> step3. .envファイルの修正</h2><pre class="language-bash"><code><span class="token function">vi</span> .env
+
+</code></pre><pre class="language-text"><code># .env
+GITHUB_USERNAME=&quot;exampleUser&quot;
+REPOSITORY=&quot;SampleRepository
+</code></pre><p><code>GITHUB_USERNAME</code> と <code>REPOSITORY</code> を自分のものに修正しましょう。</p><h2 id="_4-shellからデプロイ"><a href="#_4-shellからデプロイ" aria-hidden="true" class="header-anchor">#</a> 4. shellからデプロイ</h2><pre class="language-bash"><code><span class="token function">bash</span> deploy.sh
+</code></pre><p>VuePressのビルドと<code>gh-pages</code>ブランチへのpushが始まります。
+docsフォルダの下を修正して、サイトを更新したいときも同様に<code>deploy.sh</code>を実行してください。</p><div class="warning custom-block"><p class="custom-block-title">注意</p><p>shではなくbashで実行する必要があります。</p></div><h2 id="_5-リポジトリの設定を変更してgithub-pagesを有効にする"><a href="#_5-リポジトリの設定を変更してgithub-pagesを有効にする" aria-hidden="true" class="header-anchor">#</a> 5. リポジトリの設定を変更してGitHub Pagesを有効にする</h2><p>github.com上の先程pushした自分のリポジトリに移動して　、リポジトリのsettingsページを開いてください。<br><strong>GitHub Pages section</strong>まで移動して、セレクトボックスから <code>gh-branch</code> を選んで Save ボタンを押しましょう。</p><p>これで {yourname}.github.io/{repository}/ へのサイトの構築ができました！</p><h2 id="付録"><a href="#付録" aria-hidden="true" class="header-anchor">#</a> 付録.</h2><h3 id="作成したサイトだけじゃなくてプロジェクトも同じリポジトリで管理したい"><a href="#作成したサイトだけじゃなくてプロジェクトも同じリポジトリで管理したい" aria-hidden="true" class="header-anchor">#</a> 作成したサイトだけじゃなくてプロジェクトも同じリポジトリで管理したい</h3><p>git initが済んでいるので、リモートリポジトリを追加してpushすれば同じリポジトリで管理できます。</p><pre class="language-text"><code>git remote origin git@github.com:{username}/{repository}.git 
+git commit -m &quot;VuePress Project&quot; .
+git push
+</code></pre><div class="tip custom-block"><p class="custom-block-title">TIP</p><p><code>gh-pages</code>ブランチはmasterブランチと別の.git履歴を持つことになります</p></div><h3 id="vuepressの設定を修正したい"><a href="#vuepressの設定を修正したい" aria-hidden="true" class="header-anchor">#</a> VuePressの設定を修正したい</h3><p><a href="https://vuepress.vuejs.org/guide/basic-config.html" target="_blank" rel="noopener noreferrer">公式ドキュメントはこちら</a></p><h3 id="vuepressで使えるmarkdownについて"><a href="#vuepressで使えるmarkdownについて" aria-hidden="true" class="header-anchor">#</a> VuePressで使えるMarkdownについて</h3><p>Markdown-itがVuePressでは使われています。<br>
+また、いくつかのVuePress用の構文が追加されています。<br><a href="https://vuepress.vuejs.org/guide/markdown.html" target="_blank" rel="noopener noreferrer">VuePress | Markdown Extensions</a>を参照してください。</p></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/VuePressOnGithubPageTemplate/HowToDeploy/English.html" class="prev">
+          how to deploy in English
+        </a></span><!----></p></div></div></div></div>
+    <script src="/VuePressOnGithubPageTemplate/assets/js/1.740ae03c.js" defer></script><script src="/VuePressOnGithubPageTemplate/assets/js/app.14ddd958.js" defer></script>
+  </body>
+</html>
