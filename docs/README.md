@@ -1,18 +1,12 @@
 # VuePress Template for Github Pages
 ![VuePress Template for Github Pages](./.resources/template_logo.png)
 
-## (Description in English)
+## Description in English
 This is VuePress template for Github Pages.  
 You can publish like [this site](https://fruitriin.github.io/vptest/) few minuts.   
 Just you need these 5 steps!
  
  （日本語の説明はもうちょっと下にあります）
- 
-### Requirements
-- git
-- write(push) permission to github from git command  
-I think you can check `ssh git@github.com`
-- yarn(not npm until VuePress need it) 
  
 ### 5 steps for publish
 1. create your repo on github
@@ -25,22 +19,22 @@ Then you publish your site!
 
 More detail. [How To Deploy](/HowToDeploy/English.md)
 
+
 ### What changed from plane VuePress?
 - some optimized deploy into github pages
 - sidebar auto generation from file and directory under the docs   
 (sorted from file and directory names.)
 - and this documentation! 
 
-## (日本語の説明)
+### Requirements
+- git
+- write(push) permission to github from git command  
+I think you can check `ssh git@github.com`
+- yarn(not npm until VuePress need it) 
+ 
+## 日本語の説明
 VuePressをGithub Pagesで公開するための雛形です。
 たった5つのステップで[こんなサイト](https://fruitriin.github.io/vptest/)を公開することができますよ！
-
-### 必要なもの
-- git
-- shell上からgitコマンドでgithubに書き込み（push）できること  
-`ssh git@github.com` コマンドで確認することができると思います。
-- yarn(VuePressが必要とする間はnpmではいけません) 
- 
 
 ### 公開のための5ステップ
 1. githubでリポジトリを作る
@@ -57,6 +51,12 @@ VuePressをGithub Pagesで公開するための雛形です。
 - サイドバーをdocs配下のファイル名とディレクトリ名から自動的に作ります。  
 (ファイル名/ディレクトリ名でソートされます)
 - そしてこのドキュメントがありますよ！
+
+### 必要なもの
+- git
+- shell上からgitコマンドでgithubに書き込み（push）できること  
+`ssh git@github.com` コマンドで確認することができると思います。
+- yarn(VuePressが必要とする間はnpmではいけません) 
 
 ## Link
 - [VuePress Official](https://vuepress.vuejs.org/)
