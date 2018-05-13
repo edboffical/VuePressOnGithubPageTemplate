@@ -56,9 +56,9 @@ bash deploy.sh
 VuePressのビルドと`gh-pages`ブランチへのpushが始まります。
 docsフォルダの下を修正して、サイトを更新したいときも同様に`deploy.sh`を実行してください。
 
-!!! warning 注意
+::: warning 注意
 shではなくbashで実行する必要があります。
-!!!
+:::
 
 ## 5. リポジトリの設定を変更してGitHub Pagesを有効にする
 github.com上の先程pushした自分のリポジトリに移動して、リポジトリのsettingsページを開いてください。　　
